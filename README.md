@@ -42,37 +42,36 @@ if lines is not None:
 # Displaying results using Matplotlib
 plt.figure(figsize=(12, 12))
 # Input Image and Grayscale Image
-plt.subplot(2, 2, 1)
 plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
 plt.title('Input Image')
 plt.axis('off')
 ```
 
-![image](https://github.com/user-attachments/assets/32761e20-ae65-4f44-9acb-51f10c41a672)
 
-![image](https://github.com/user-attachments/assets/6903828d-f70f-4618-8b90-0a64d2e4c88b)
+![image](https://github.com/user-attachments/assets/eb4f40fb-b3cc-4814-a217-cab999c8f35e)
+
+![image](https://github.com/user-attachments/assets/4f051467-c91c-44b7-966b-7e414fa350de)
 
 ### # Canny Edge Detection Output:
 ```
 # Canny Edge Detection Output
-plt.subplot(2, 2, 3)
 plt.imshow(edges, cmap='gray')
 plt.title('Canny Edge Detector Output')
 plt.axis('off')
 ```
 ### output:
-![image](https://github.com/user-attachments/assets/cd3d3018-4b4d-4149-a5ab-45b452129ce0)
+![image](https://github.com/user-attachments/assets/e9127052-ae10-4ac9-bcd0-d2fbd7bc0d6f)
+
 
 ### Display the result of Hough transform.
 ### Hough Transform Result.
 ```
 # Hough Transform Result
-plt.subplot(2, 2, 4)
 plt.imshow(cv2.cvtColor(output_image, cv2.COLOR_BGR2RGB))
 plt.title('Hough Transform - Line Detection')
 plt.axis('off')
 ```
-![image](https://github.com/user-attachments/assets/2da83ac7-a72d-4a3f-8725-ba56d372720a)
+![image](https://github.com/user-attachments/assets/ce8ce056-1b9c-4076-8c9c-c3eb3a690052)
 
 
 ### Result :
